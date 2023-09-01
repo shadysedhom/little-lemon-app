@@ -1,3 +1,5 @@
+import Logo from './Logo.svg';
+
 function Nav() {
     const navigation = [
         {
@@ -27,13 +29,20 @@ function Nav() {
     ]
 
     return(
-        <nav>
-            <ul>
-                {
+        <nav className="container">
+            <ul className="row">
+
+
+                <div className="col-md-4">
+                    <li><a href="https://google.com"><img src={Logo} alt="Little Lemon Logo"></img></a></li>
+                </div>
+
+                <div className='col-md-8'>{
                     navigation.map((element) => {
-                        return(<a href={element.url}><li>{element.text}</li></a>);
-                    })
-                }
+                        return(<li key={element.text}><a href={element.url}>{element.text}</a></li>);
+                    })}
+                </div>
+
             </ul>
         </nav>
     );

@@ -1,3 +1,5 @@
+import Logo from "./Logo.svg";
+
 function Footer() {
     const doormatNavigation = [
         {
@@ -58,10 +60,12 @@ function Footer() {
 
     return(
         <footer>
+            <img src={Logo} alt="Little Lemon Logo"></img>
+
             <ul>
                 {
                     doormatNavigation.map((element) => {
-                        return(<a href={element.url}><li>{element.text}</li></a>);
+                        return(<li key={element.text}><a href={element.url}>{element.text}</a></li>);
                     })
                 }
             </ul>
@@ -69,7 +73,7 @@ function Footer() {
             <ul>
                 {
                     contact.map((element) => {
-                        return(<a href={element.url}><li>{element.text}</li></a>);
+                        return(<li key={element.text}><a href={element.url}>{element.text}</a></li>);
                     })
                 }
             </ul>
@@ -77,7 +81,7 @@ function Footer() {
             <ul>
                 {
                     socials.map((element) => {
-                        return(<a href={element.url}><li>{element.text}</li></a>);
+                        return(<li key={element.text}><a href={element.url}>{element.text}</a></li>);
                     })
                 }
             </ul>

@@ -1,38 +1,129 @@
-.App {
+/* Custom CSS */
+@font-face {
+  font-family: "Karla", sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap');
+}
+
+@font-face {
+  font-family: "Markazi-Text", serif;
+  src: url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;700&display=swap');
+}
+
+
+.main {
+  display: grid;
+  grid-column: repeat(12, auto);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0; 
+  padding: 0; 
+  overflow: hidden; 
+  background-color: #FFFFFF;
+
+  align-items: center; /* */
+}
+
+li {
+  float: left;
+}
+
+li a{
+  display: block; 
+  color: black;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  text-decoration: none;
+
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-family: "Markazi-Text";
+  font-weight: medium;
+  font-size: 64px;
+  color: #F4CE14;
+
+  margin-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subtitle {
+  font-family: "Markazi-Text";
+  font-weight: normal;
+  font-size: 40px;
+  color: white;
+
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.buttonLink {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.desc {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.specials {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg {
+  background-color: #495E57;
+}
+
+.btn-warning {
+  width: 200px;
+  height: 60px;
+  border-radius: 16px;
+}
+
+.reserve {
+  padding-bottom: 30px;
+}
+
+.heroImage {
+  width: 384px;
+  height: 398px;
+  border-radius: 16px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 17vw;
+  margin-top: -39vh;
+}
+
+.highlights {
+  align-items: center;
+}
+
+.topPadder {
+  margin-top: 300px;
+}
+
+.spacer {
+  height: 8vh;
+}
+
+.orderOnline {
+  margin-top: 20px;
+}
+
+.dish {
+  background-color: #495E57;
+}
+
+.dishes {
+  padding: 20px;
+  background-color: white;
 }

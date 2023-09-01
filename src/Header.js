@@ -1,9 +1,10 @@
-import Logo from './Logo.svg';
+/// import Logo from './Logo.svg';
+import Nav from './Nav.js'; /////
 
 function Header() {
     return(
         <header>
-            <img src={Logo}></img>
+            <Nav />
         </header>
     );
 }
