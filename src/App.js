@@ -1,18 +1,30 @@
 import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route } from 'react-router';
+
 import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
-import React from 'react';
+import Home from './Home.js';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Bookingpage from './Bookingpage';
 
 function App() {
-  return (
-    <div className="main">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  );
-}
+    return (
 
-export default App;
+        ReactDOM.render(
+            <Router>
+                <Routes>
+                    <Route path='/' element={<Home />}></Route>
+                    <Route path='/booking' element={<Bookingpage />}></Route>
+                </Routes>
+            </Router>, document.getElementById('root')
+        )
+
+    );
+  }
+
+  export default App;

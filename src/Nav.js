@@ -1,4 +1,8 @@
 import Logo from './Logo.svg';
+import App from './Home.js';
+import { Link } from 'react-router-dom';
+
+
 
 export default function Nav() {
     const navigation = [
@@ -42,13 +46,18 @@ export default function Nav() {
                 <ul className="row">
 
                     <div className="col">
-                        <li><a href="https://google.com" className='logoLink'><img src={Logo} alt="Little Lemon Logo" className='logo'></img></a></li>
+                        <li><Link to='/' className='logoLink'><img src={Logo} alt="Little Lemon Logo" className='logo'></img></Link></li>
                     </div>
 
-                    <div className='col-md-8'>{
-                        navigation.map((element) => {
-                            return(<li key={element.text}><a href={element.url}>{element.text}</a></li>);
-                        })}
+                    <div className='col-md-8'>
+
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/'>About</Link></li>
+                        <li><Link to='/'>Menu</Link></li>
+                        <li><Link to='/booking'>Reservations</Link></li>
+                        <li><Link to='/'>Order Online</Link></li>
+                        <li><Link to='/'>Login</Link></li>
+
                     </div>
 
                 </ul>
