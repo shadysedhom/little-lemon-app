@@ -9,6 +9,20 @@
   src: url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;700&display=swap');
 }
 
+img {
+  border-radius: 16px;
+}
+
+.logo {
+  width: 200px;
+  margin-left: -50px;
+
+  background-color: white;
+}
+
+.logoLink {
+  align-items: start;
+}
 
 .main {
   display: grid;
@@ -21,8 +35,7 @@ ul {
   padding: 0; 
   overflow: hidden; 
   background-color: #FFFFFF;
-
-  align-items: center; /* */
+  align-items: center; 
 }
 
 li {
@@ -63,7 +76,7 @@ li a{
 .buttonLink {
   font-family: "Karla", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   text-decoration: none;
 }
@@ -86,7 +99,7 @@ li a{
 .btn-warning {
   width: 200px;
   height: 60px;
-  border-radius: 16px;
+  border-radius: 16px !important;
 }
 
 .reserve {
@@ -96,10 +109,9 @@ li a{
 .heroImage {
   width: 384px;
   height: 398px;
-  border-radius: 16px;
   z-index: 1;
   position: absolute;
-  margin-left: 17vw;
+  margin-left: 19vw;
   margin-top: -39vh;
 }
 
@@ -117,13 +129,357 @@ li a{
 
 .orderOnline {
   margin-top: 20px;
-}
-
-.dish {
-  background-color: #495E57;
+  margin-left: 80px;
 }
 
 .dishes {
-  padding: 20px;
-  background-color: white;
+  padding-bottom: 50px;
+}
+
+.cardImage {
+  width: 345px !important;
+  margin-left: -14px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.card {
+  background-color: #EDEFEE !important;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+
+  border-radius: 16px !important;
+}
+
+.cardTitle {
+  font-family: "Markazi-Text";
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.cardPrice {
+  color: red;
+}
+
+.cardText {
+  font-family: "Karla", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #495E57;
+}
+
+.cardActionText {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.scooter {
+  width: 30px;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+.orderLink {
+  text-decoration: none;
+  color: black;
+}
+
+.testimonials {
+  font-family: "Markazi-Text";
+  font-weight: medium;
+  font-size: 64px;
+  color: white;
+}
+
+#bruchetta {
+  margin-top: 20px;
+}
+
+.testimonialCard {
+  max-width: 220px;
+
+  width: 200px;
+  height: 200px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background-color: #D9D9D9;
+  border-radius: 16px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.testimonialTitle {
+  font-family: "Karla", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.testimonialContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.imgAndRating {
+  padding-top: 10px;
+}
+
+.rating {
+  padding-top: 20px;
+ /* margin-left: -170px; */
+}
+
+.review {
+  padding-top: 10px;
+}
+
+.altSubtitle {
+  color: #495E57;
+}
+
+.aboutText {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.aboutImgBelow {
+  width: 400px;
+  margin-top: 100px;
+
+  filter: drop-shadow(0px 4px 4px #000000);
+}
+
+.aboutImgAbove {
+  width: 400px;
+  z-index: 1;
+  position: absolute;
+  margin-left: -250px;
+
+  filter: drop-shadow(0px 4px 4px #000000);
+}
+
+.aboutImages {
+  margin: auto;
+  padding-top: 30px;
+}
+
+footer {
+  background-color: #EDEFEE;
+}
+
+.footer {
+  align-items: flex-start;
+}
+
+footer ul {
+  background-color: #EDEFEE;
+
+  font-family: "Karla", sans-serif;
+  font-size: medium;
+  font-size: 20px;
+
+  line-height: 0.5;
+
+  overflow: visible ;
+}
+
+
+.footerLogo {
+  display: contents;
+}
+
+.footerLogo img {
+  width: 200px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 200px;
+}
+
+.footerMenuHeading {
+  line-height: normal;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.orderLink:hover {
+  text-decoration: underline;
+}
+
+.doormat, .contact, .socials {
+  white-space: nowrap;
+}
+
+.footerMenuHeading {
+  white-space: normal;
+}
+
+@media(width < 768px) { /* MOBILE VIEW*/
+  .heroImage {
+    margin: 50px 20px 50px 20px;
+  }
+
+  .hero {
+    text-align: center;
+    margin: auto
+  }
+
+  .specials {
+    margin-top: 400px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .highlights {
+    text-align: center;
+    margin: auto;
+  }
+
+  .btn-warning {
+    text-align: center;
+    margin: auto;
+  }
+
+  .dishes {
+    text-align: center;
+    margin: auto;
+  }
+
+  .card {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  .testimonialCard {
+    padding-bottom: 28vh ;
+  }
+
+  .testimonialContainer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testimonialTitle {
+    padding-left: 0;
+  }
+
+  .testimonials {
+    text-align: center;
+
+  }
+
+  .aboutSection {
+    text-align: center;
+  }
+
+  .aboutImgBelow {
+    width: 300px;
+  }
+
+  .aboutImgAbove {
+    width: 300px;
+  }
+
+  .footerLogo {
+    margin-left: 50px;
+  }
+
+  .doormat {
+    padding-top: 50px;
+  }
+
+  .doormat, .contact, .socials, .footerLogo {
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .doormat li, .contact li, .socials li {
+    display:contents;
+  }
+
+  .contact {
+    padding-top: 20px;
+
+  }
+
+  .socials {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) { /* TABLET VIEW*/
+  .heroImage {
+    margin-top: -55vh;
+  }
+
+  .specials {
+    white-space: nowrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testimonials {
+    margin-left: -40px;
+  }
+
+  .ll {
+    white-space: nowrap;
+  }
+
+  .aboutText {
+    font-size: 20px !important;
+  }
+
+  .aboutImgAbove {
+    width: 300px;
+  }
+
+  .aboutImgBelow {
+    width: 300px;
+  }
+
+  .aboutImages {
+    padding-top: 150px;
+  }
+
+  .doormat {
+    margin-left: -200px;
+    margin-right: 40px;
+    white-space: nowrap;
+  }
+
+  .contact, .socials {
+    white-space: nowrap;
+    margin-right: 40px;
+  }
+
+  .footerMenuHeading {
+    white-space: normal;
+  }
+
 }

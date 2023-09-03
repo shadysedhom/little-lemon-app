@@ -1,7 +1,7 @@
-/// import Logo from './Logo.svg';
 import Nav from './Nav.js'; /////
 
-function Header() {
+export default function Header() {
+
     return(
         <header>
             <Nav />
@@ -9,4 +9,3 @@ function Header() {
     );
 }
 
-export default Header;
