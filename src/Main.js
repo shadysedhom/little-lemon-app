@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 /* import 'bootstrap/dist/css/bootstrap.min.css'; */
 import restaurantfood from './restaurantfood.jpg';
 import greekSalad from './greekSalad.jpg';
@@ -13,6 +15,7 @@ import restaurantChef from './restaurantChef.jpg';
 import ImgMediaCard from './ImgMediaCard';
 import { CardMedia } from '@mui/material';
 import Testimonial from './Testimonial';
+import Bookingpage from './Bookingpage';
 
 
 export default function Main() {
@@ -30,7 +33,7 @@ export default function Main() {
                                 twist.
                             </p>
                             <div className="reserve">
-                                <button className="btn btn-warning"><a href="https:google.com" className="buttonLink">Reserve a Table</a></button>
+                                <button className="btn btn-warning"><Link to='/booking' className="buttonLink">Reserve a Table</Link></button>
                             </div>
                         </div>
                     </div>

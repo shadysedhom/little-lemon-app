@@ -11,6 +11,7 @@ import Home from './Home.js';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Bookingpage from './Bookingpage';
+import Confirmed from './Confirmed';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Home />}></Route>
                     <Route path='/booking' element={<Bookingpage />}></Route>
+                    <Route path='/confirmed' element={<Confirmed />}></Route>
                 </Routes>
             </Router>, document.getElementById('root')
         )
