@@ -333,7 +333,7 @@ li a:hover {
   white-space: normal;
 }
 
-/*BOOKING FORM */
+/*BOOKING FORM + CLIENT-SIDE VALIDATION */
 
 .bookingForm {
   display: grid;
@@ -378,6 +378,19 @@ li a:hover {
 .confirmedSubtitle {
   padding-bottom: 200px;
 }
+
+form:invalid input#submit:hover {
+  cursor: not-allowed;
+}
+
+
+form:invalid>#submit {
+  background-color: gray;
+  color:#EDEFEE ;
+  border: none;
+}
+
+
 
 @media(width < 768px) { /* MOBILE VIEW*/
   .heroImage {

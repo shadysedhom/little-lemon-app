@@ -164,8 +164,8 @@ export default function Main() {
                     <div className='col'></div>
 
                     <div className='col-md-6 aboutImages'>
-                        <img src={restaurant} className='aboutImgBelow'></img>
-                        <img src={restaurantChef} className='aboutImgAbove'></img>
+                        <img src={restaurant} alt="Restaurant" className='aboutImgBelow'></img>
+                        <img src={restaurantChef} alt="Restaurant Chef" className='aboutImgAbove'></img>
                     </div>
                 </div>
 

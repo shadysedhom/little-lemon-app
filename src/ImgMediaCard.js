@@ -12,7 +12,7 @@ export default function ImgMediaCard(props) {
     <Card sx={{ maxWidth: 345 }} className='card'>
       <CardMedia className='cardImage'
         component="img"
-        alt="green iguana"
+        alt={props.title}
         height="170"
         image={props.source}
       />
@@ -37,7 +37,7 @@ export default function ImgMediaCard(props) {
       </CardContent>
       <CardActions>
         <a href="https://google.com" className='orderLink'>
-          <h3 className='cardActionText' id={props.id}>Order a delivery <img src={scooter} className='scooter'></img></h3>
+          <h3 className='cardActionText' id={props.id}>Order a delivery <img src={scooter} alt='scooter' className='scooter'></img></h3>
         </a>
       </CardActions>
     </Card>

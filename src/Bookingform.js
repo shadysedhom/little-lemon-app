@@ -41,6 +41,7 @@ export default function Bookingform(props) {
         }
 
 
+
         /* =================================================================\\\\
            Check how to set the value for multiple controlled inputs in form?>>>>
            =================================================================////
@@ -49,9 +50,17 @@ export default function Bookingform(props) {
         return(
             <form onSubmit={handleSubmit} className="bookingForm">
                 <label htmlFor="res-date">Choose Date</label>
-                <input type="date" id="res-date" name="date" value={date} onChange={ handleDateChange }/>
+                <input type="date" id="res-date" name="date" value={date} onChange={ handleDateChange } 
+                required 
+                onInvalid={() => document.getElementById('res-date').setCustomValidity('Please select a date')}
+                onInput = {() => document.getElementById('res-date').setCustomValidity('')}
+                />
                 <label htmlFor="res-time">Choose Time</label>
-                <select id="res-time" name="time" value={time} onChange={(e) => { setTime(e.target.value) }}>
+                <select id="res-time" name="time" value={time} onChange={(e) => { setTime(e.target.value) }} 
+                    required
+                    onInvalid={() => document.getElementById('res-time').setCustomValidity('Please select a time')}
+                    onInput = {() => document.getElementById('res-time').setCustomValidity('')}
+                    >
                     {
                         availableTimes.map((time) => {
                             return <option key={time}>{time}</option>
@@ -59,13 +68,17 @@ export default function Bookingform(props) {
                     }
                 </select>
                 <label htmlFor="guests">Number of Guests</label>
-                <input type="number" placeholder="1" min="1" max="10" id="guests" name="guestNumber" value={guestNumber} onChange={(e) => {setGuestNumber(e.target.value)}} />
+                <input type="number" placeholder="1" min="1" max="10" id="guests" name="guestNumber" value={guestNumber} onChange={(e) => {setGuestNumber(e.target.value)}} 
+                    required 
+                    onInvalid={() => document.getElementById('guests').setCustomValidity('For how many people would you like to book a reservation?')}
+                    onInput = {() => document.getElementById('guests').setCustomValidity('')}
+                    />
                 <label htmlFor="occasion">Occasion</label>
                 <select id="occasion" name="occassion" value={occasion} onChange={(e) => {setOccassion(e.target.value)}}>
                     <option>Birthday</option>
                     <option>Anniversary</option>
                 </select>
-                <input type="submit" value="Make Your Reservation" className="btn btn-warning" />
+                <input type="submit" id="submit" value="Make Your Reservation" className="btn btn-warning" />
             </form>
         );
 
